@@ -158,8 +158,7 @@ int turul;
 char name[100]; 
 float size, x, y; 
 cout << "\n[Durs " << i + 1 << "]" << endl; 
-cout<<"Dursiin turliig songono uu: (1: kvadrat, 2: toirog, 3: 
-gurvaljin)"<<endl; 
+cout << "Dursiin turliig songono uu: (1: kvadrat, 2: toirog, 3: gurvaljin)" << endl;
 cin >>turul; 
 cout<<"Dursiin ner: "<<endl; 
 cin >> name; 
@@ -184,15 +183,21 @@ default:
         } 
     } 
                  
-    for (int i=0; i<n; i++){ 
-        for( int j=0; j<n-1; j++){ 
-            if(shapes[j]->getArea() > shapes[j+1]->getArea()){ 
-                TwoDShape *temp = shapes[j]; 
-                shapes[j] = shapes[j+1]; 
-                shapes[j+1] = temp; 
-            } 
-        } 
-    } 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            float area1 = shapes[j]->getArea();
+            float area2 = shapes[j + 1]->getArea();
+     
+            float perim1 = shapes[j]->getPerimeter();
+            float perim2 = shapes[j + 1]->getPerimeter();
+     
+            if (area1 > area2 || (area1 == area2 && perim1 > perim2)) {
+                TwoDShape *temp = shapes[j];
+                shapes[j] = shapes[j + 1];
+                shapes[j + 1] = temp;
+            }
+        }
+    }
  
     //hewleh 
     cout << "\n=========================\n" << endl; 
