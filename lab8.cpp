@@ -75,15 +75,11 @@ zuunDeedY = y;
 } 
 float Square::getArea() { return size * size; } 
 float Square::getPerimeter() { return 4 * size; } 
-void Square::printCoordinate() { 
-cout << "Zuun deed: (" << zuunDeedX << ", " << zuunDeedY << ")" << 
-endl; 
-cout << "Baruun deed: (" << zuunDeedX + size << ", " << zuunDeedY << 
-")" << endl; 
-cout << "Baruun dood: (" << zuunDeedX + size << ", " << zuunDeedY – 
-size << ")" << endl; 
-cout << "Zuun dood: (" << zuunDeedX << ", " << zuunDeedY - size << 
-")" << endl;} 
+void Square::printCoordinate() {
+  cout << "Zuun deed: (" << zuunDeedX << ", " << zuunDeedY << ")" << endl;
+  cout << "Baruun deed: (" << zuunDeedX + size << ", " << zuunDeedY << ")" << endl;
+  cout << "Baruun dood: (" << zuunDeedX + size << ", " << zuunDeedY - size << ")" << endl;
+  cout << "Zuun dood: (" << zuunDeedX << ", " << zuunDeedY - size << ")" << endl;}
 Square::~Square() { 
 cout << "Square destructor" << endl;} 
 // ТОЙРОГ 
@@ -142,8 +138,7 @@ float ondor = (size * sqrt(3)) / 2;
 cout << "Deed oroi: (" << deedOroiX << ", " << deedOroiY << ")" << 
 endl; 
 cout << "Baruun dood: (" << deedOroiX + size / 2 << ", " << deedOroiY - ondor << ")" << endl; 
-cout << "Zuun dood: (" << deedOroiX - size / 2 << ", " << deedOroiY – 
-ondor << ")" << endl; 
+cout << "Zuun dood: (" << deedOroiX - size / 2 << ", " << deedOroiY - ondor << ")" << endl; 
 } 
 Triangle::~Triangle() { 
 cout << "Triangle destructor" << endl; 
