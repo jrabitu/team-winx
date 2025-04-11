@@ -217,7 +217,7 @@ int main() {
   }
  
   //ХЭВЛЭХ 
-  cout << "\n================Dursiin medeeelel================n" << endl; 
+  cout << "\n================Dursiin medeeelel================\n" << endl; 
   for(int i=0; i<n; i++){ 
       cout << "\nDursiin ner: " << shapes[i]->getName() << endl; 
       cout << "Talbai: " << shapes[i]->getArea() << endl; 
