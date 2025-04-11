@@ -30,7 +30,7 @@ cout << "Shape destructor" << endl;
 char *Shape:: getName() { return this->name; } 
 void Shape::setName(const char *n) {  
 if (n == nullptr) { 
-cout << "Error: Null name provided." << endl; 
+cout << "name null bna" << endl; 
 return; 
 } 
 delete[] this->name;
