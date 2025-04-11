@@ -1,3 +1,4 @@
+//changing test
 #include <iostream> 
 #include <cmath> 
 #include <string> 
@@ -7,6 +8,7 @@ const float PI = 3.14159;
 //эхийн эх класс 
 class Shape { 
 protected: 
+char *color;
 char *name; 
 public: 
 Shape(const char *n); 
